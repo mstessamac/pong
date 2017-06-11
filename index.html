@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Ping Pong</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+  input type="text" id="num1" name="num1" />
+<input type="text" id="op" name="op" />
+<input type="text" id="num2" name="num2" />
+<br />
+<input type="button" value="Solve" onClick="calc(this)">
+
+
+
+
+  <div class="header">
+  <p>PING PONG!!</p>
+</div>
+
+ <body background="images/pingpong.jpeg"></body>
+
+<div>
+  <div class="left container col-lg-4">
+    <h1>Let's Play!</h1>
+    <h2>Rules</h2>
+    <p>Ping-pong will count up to your number from 1 with the following exceptions:</p>
+    <ul>
+        <li>Numbers divisible by 3 become "ping"</li>
+        <li>Numbers divisible by 5 become "pong"</li>
+        <li>Numbers divisible by 15 become "pingpong"</li>
+    </ul>
+    <div class="form-group">
+                    <label for="number">Enter your number:</label>
+                    <input id="number" class="formcontrol" required=" " type="text "></input>
+                    <button class="btn">Ping-Pong!</button>
+                  </div>
+                  <div id="userOutput"></div>
+    </div>
+</div>
+  </div>
+
+  <div class="right">
+    <h1> About Ping Pong</h1>
+    <h2> Created by:</h2> Tessa McDuffie
+    <h3>Github Username/URL:</h3> tessamac2205
+    <h4> Level 2 Test for:</h4> Javascript
+  </div>
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<script type="text/javascript">
+  var numbernumber = document.getElementById("number");
+  var number = parseInt(numbernumber);
+    var numberArray=[];
+      var i= 1;
+      for(i=1; i<=number; i++){
+        numberArray.push(i);
+      }
+      var j=0;
+      for(j=0; i<numberArray.length; i++){
+
+        if (numberArray[i]%3===0) {
+          numberArray[i] = 'ping';
+        }
+
+      if (numberArray[i]%5===0) {
+        numberArray[i] = 'pong';
+      }
+        if (numberArray[i]%15===0) {
+           numberArray[i] = 'pingpong';
+         }
+  }
+  alert(numberArray);
+
+  </script>
+
+
+
+
+</body>
+
+</html>
