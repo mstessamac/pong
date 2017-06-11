@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Ping Pong</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+ <script>
+
+if (i % 3===0) {
+return "ping";
+}
+
+else if (i % 5===0)){
+return "pong";
+}
+else {
+return "pingpong";
+}
+};
+
+</script>
+
+
+<body>
+  input type="text" id="num1" name="num1" />
+<input type="text" id="op" name="op" />
+<input type="text" id="num2" name="num2" />
+<br />
+<input type="button" value="Solve" onClick="calc(this)">
+
+
+
+
+  <div class="header">
+  <p>PING PONG!!</p>
+</div>
+
+ <body background="images/pingpong.jpeg"></body>
+
+  <div class="left">
+      <h1> Play Ping Pong!</h1>
+      <h2> Rules:</h2>
+      <p> Ping Pong will count up to your number from 1 with the following exceptions:</p>
+
+      <ol>
+        <li> Numbers divisible by 3 become "ping"</li>
+        <li> Numbers divisible by 5 become "pong"</li>
+        <li> Numbers divisible by 3 and 5 become "pingpong"</li>
+      </ol>
+
+<div>
+      <form action="Enter your number">
+1st Number : <input type="text" id="firstNumber" /><br>
+2nd Number: <input type="text" id="secondNumber" /><br>
+<input type="button" onClick="multiplyBy()" Value="Multiply" />
+<input type="button" onClick="divideBy()" Value="Divide" />
+</form>
+        <input type="number" name="number" id="pnumber" maxlength="1">
+        <label for="number"> Enter your number here</label>
+        <br>
+
+        <input type id="submit" value="PingPong!!!">
+      </form>
+  </div>
+
+  <div class="right">
+    <h1> About Ping Pong</h1>
+    <h2> Created by:</h2> Tessa McDuffie
+    <h3>Github Username/URL:</h3> tessamac2205
+    <h4> Level 2 Test for:</h4> Java
+  </div>
+
+
+
+</body>
+
+</html>
